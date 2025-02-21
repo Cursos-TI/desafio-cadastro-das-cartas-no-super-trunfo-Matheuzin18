@@ -7,16 +7,52 @@
 //Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+    char estado;
+    printf("Digite uma letra para representar o estado: \n");
+    scanf("%c" , &estado);
+    // Estado que a carta representa
+
+    char codigo[4];
+    printf("Digite o codigo da carta (letra do estado seguida de um número entre 01 e 04): \n");
+    scanf("%s", &codigo);
+    // Código que a carta possui
+
+    char cidade[50];
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", &cidade);
+    // Cidade que a carta representa
+
+    int populacao;
+    printf("Digite o número aproximado de habitantes da cidade: \n");
+    scanf("%i", &populacao);
+    // Número de habitantes que a cidade possui
+
+    float area;
+    printf("Digite a área da cidade em km²: \n");
+    scanf("%f", &area);
+    // Área da cidade em km²
+
+    float pib;
+    printf("Digite o PIB (Produto Interno Bruto) da cidade: \n");
+    scanf("%f", &pib);
+    // Produto Interno Bruto (PIB) da cidade
+    
+    int turistico;
+    printf("Digite a quantidade de pontos turísticos que a cidade possui: \n");
+    scanf("%i", &turistico);
+    // Número de pontos turísticos que a cidade possui
+    
+    printf("A letra que repesenta o estado é: %c. \n", estado);
+    printf("O código da carta é: %s. \n", codigo);
+    printf("O nome da cidade é: %s. \n", cidade);
+    printf("A população da cidade é de aproximadamente %i habitantes. \n", populacao);
+    printf("A área da cidade é de: %fkm². \n", area);
+    printf("O PIB da cidade é de: R$%f. \n", pib);
+    printf("A cidade tem um total de %i pontos turísticos. \n", turistico);
+    //Exibir todas as informações referentes a carta representada
+
+    
     return 0;
+
 }
