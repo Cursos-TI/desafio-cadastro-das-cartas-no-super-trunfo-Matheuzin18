@@ -42,17 +42,17 @@ int main() {
     printf("Digite a quantidade de pontos turísticos que a cidade possui: \n");
     scanf("%i", &turistico);
     // Número de pontos turísticos que a cidade possui
-    
-    
-    
-    
+
+
+
+
     char estado2;
     printf("Digite uma letra para representar outro estado: \n");
     scanf("%c" , &estado2);
-    // Estado que a carta representa
+    //Estado que a carta representa
     
     char codigo2[4];
-    printf("Digite o codigo da carta (letra do estado seguida de um número entre 01 e 04): \n");
+    printf("Digite o codigo da segunda carta (letra do estado seguida de um número entre 01 e 04): \n");
     scanf("%s", &codigo2);
     // Código que a carta possui
     
@@ -83,8 +83,8 @@ int main() {
     
 
 
-    printf("A letra que repesenta o estado é: %c. \n", estado);
-    printf("O código da carta é: %s. \n", codigo);
+    printf("A letra que representa o primeiro estado é: %c. \n", estado);
+    printf("O código da primeira carta é: %s. \n", codigo);
     printf("O nome da cidade é: %s. \n", cidade);
     printf("A população da cidade é de aproximadamente %i habitantes. \n", populacao);
     printf("A área da cidade é de: %fkm². \n", area);
@@ -92,7 +92,7 @@ int main() {
     printf("A cidade tem um total de %i pontos turísticos. \n", turistico);
     //Exibir todas as informações referentes a primeira carta
 
-    printf("A letra que repesenta o segundo estado é: %c. \n", estado2);
+    printf("A letra que representa o segundo estado é: %c. \n", estado2);
     printf("O código da segunda carta é: %s. \n", codigo2);
     printf("O nome da segunda cidade é: %s. \n", cidade2);
     printf("A população da outra cidade é de aproximadamente %i habitantes. \n", populacao2);
