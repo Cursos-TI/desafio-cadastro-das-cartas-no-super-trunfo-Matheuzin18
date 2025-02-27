@@ -43,6 +43,12 @@ int main() {
     scanf("%i", &turistico);
     // Número de pontos turísticos que a cidade possui
 
+    float DensidadePopulacional = populacao / area;
+    // Calcular a Densidade Populacional da cidade
+
+    float pibPerCapita = pib / populacao;
+    // Calcular o PIB per capita da cidade
+
 
 
 
@@ -80,25 +86,33 @@ int main() {
     printf("Digite a quantidade de pontos turísticos que a outra cidade possui: \n");
     scanf("%i", &turistico2);
     // Número de pontos turísticos que a cidade possui
-    
 
+    float DensidadePopulacional2 = populacao2 / area2;
+    // Calcular a Densidade Populacional da cidade    
+
+    float pibPerCapita2 = pib2 / populacao2;
+    // Calcular o PIB per capita da cidade
 
     printf("A letra que representa o primeiro estado é: %c. \n", estado);
     printf("O código da primeira carta é: %s. \n", codigo);
     printf("O nome da cidade é: %s. \n", cidade);
     printf("A população da cidade é de aproximadamente %i habitantes. \n", populacao);
-    printf("A área da cidade é de: %fkm². \n", area);
-    printf("O PIB da cidade é de: R$%f. \n", pib);
+    printf("A área da cidade é de: %.1fkm². \n", area);
+    printf("O PIB da cidade é de: R$%.1f. \n", pib);
     printf("A cidade tem um total de %i pontos turísticos. \n", turistico);
+    printf("A densidade populacional dessa cidade é de %.2f habitantes por km². \n", DensidadePopulacional);
+    printf("O pib per capita dessa cidade é de R$%.2f. \n", pibPerCapita);
     //Exibir todas as informações referentes a primeira carta
 
     printf("A letra que representa o segundo estado é: %c. \n", estado2);
     printf("O código da segunda carta é: %s. \n", codigo2);
     printf("O nome da segunda cidade é: %s. \n", cidade2);
     printf("A população da outra cidade é de aproximadamente %i habitantes. \n", populacao2);
-    printf("A área da cidade é de: %fkm². \n", area2);
-    printf("O PIB da cidade é de: R$%f. \n", pib2);
+    printf("A área da cidade é de: %.1fkm². \n", area2);
+    printf("O PIB da cidade é de: R$%.1f. \n", pib2);
     printf("Essa cidade tem um total de %i pontos turísticos. \n", turistico2);
+    printf("A densidade populacional dessa cidade é de %.2f habitantes por km². \n", DensidadePopulacional2);
+    printf("O pib per capita dessa cidade é de R$%.2f. \n", pibPerCapita2);
     //Exibir todas as informações referentes a segunda carta
 
     return 0;
