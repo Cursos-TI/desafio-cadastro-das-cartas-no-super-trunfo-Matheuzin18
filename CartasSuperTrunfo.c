@@ -24,7 +24,7 @@ int main() {
 
     unsigned long int populacao;
     printf("Digite o número aproximado de habitantes da cidade: \n");
-    scanf("%i", &populacao);
+    scanf("%lu", &populacao);
     // Número de habitantes que a cidade possui
 
     float area;
@@ -72,7 +72,7 @@ int main() {
     
     unsigned long int populacao2;
     printf("Digite o número aproximado de habitantes da nova cidade: \n");
-    scanf("%i", &populacao2);
+    scanf("%lu", &populacao2);
     // Número de habitantes que a cidade possui
     
     float area2;
